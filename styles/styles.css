@@ -21,11 +21,12 @@ button {
 .whole-nav {
   display: flex;
   align-items: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #ececec;
 }
 
 .header-logo {
-  padding-top: 25px;
-  padding-bottom: 26px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -112,10 +113,15 @@ button {
   padding-right: 15px;
   margin: 0 auto;
 }
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 
 .gray-block {
+  max-width: 1600px;
+  height: 600px;
   background-color: var(--color-gray-block);
-  margin-bottom: 94px;
 }
 .h1-design {
   display: block;
@@ -131,6 +137,7 @@ button {
   text-transform: uppercase;
   color: var(--color-white);
   text-align: center;
+  padding-top: 195px;
 }
 
 .btn {
@@ -218,9 +225,6 @@ button {
   margin-top: 0;
   margin-bottom: 50px;
 }
-.whatwedo {
-  margin-bottom: 188px;
-}
 
 .whatwedo-ul {
   display: flex;
@@ -248,9 +252,8 @@ button {
   line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(-color-nav-black);
-  margin-top: 30px;
-  margin-bottom: 0;
+  color: var(--color-nav-black);
+  margin-bottom: 10;
 }
 .text-team {
   font-size: 16px;
@@ -258,9 +261,6 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-nav-grey);
-  margin-top: 10px;
-  margin-bottom: 0;
-  padding-bottom: 30px;
 }
 
 .ourteam-ul {
@@ -277,6 +277,10 @@ button {
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
   filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.2));
 }
+.our-team-text-unit {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .our-team-item {
   width: 270px;
@@ -290,8 +294,8 @@ button {
 /*--------------Footer---------------*/
 .footer-design {
   background: var(--footer-bckgrd);
-  margin-top: 94px;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-part3 {
   color: var(--color-white);
@@ -318,7 +322,8 @@ button {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.footer-li {
+
+.footer-li:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -341,7 +346,7 @@ button {
 }
 
 /*-------------Portfolio-----------*/
-.container-prtf {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -359,16 +364,18 @@ button {
 }
 
 .prtf-text {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   border-right-style: solid;
   border-right-width: 1px;
   border-left-style: solid;
   border-left-width: 1px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-top-style: solid;
   border-color: #eeeeee;
-  border-top-width: 1px;
-  border-top-color: transparent;
 }
 
 .prtf-flex-item:nth-child(3n) {
@@ -393,9 +400,6 @@ button {
   margin-right: auto;
   margin-bottom: 34px;
   justify-content: space-between;
-}
-
-.upper-list-item {
 }
 
 .btn2 {
@@ -431,12 +435,10 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--color-nav-black);
   text-align: left;
   vertical-align: top;
-  margin-top: 20;
-  margin-bottom: 4;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-bottom: 4px;
 }
 
 .p-portfolio {
@@ -445,10 +447,8 @@ button {
   text-align: left;
   vertical-align: top;
   letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  color: var(--color-nav-grey);
+  margin: 0;
 }
 img {
   display: block;
